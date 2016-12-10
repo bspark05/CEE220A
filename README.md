@@ -47,10 +47,10 @@ Parameters: | |
 **Returns:** | |
 **excelArray**|*numpy.ndarray* 
  | A multidimensional (n x m) array (where, n is the number of variables, m is the number of observations
- 
+
 ### CEE220A.display.printmat
 CEE220A.display.**printmat**(*arr, row_labels, col_labels*)
-: Visualization for an array with labels
+  : Visualization for an array with labels
 
 Parameters: | |
 ------|------
@@ -63,7 +63,8 @@ Parameters: | |
  
 ### CEE220A.TripGeneration.Production.correlationMat
 CEE220A.TripGeneration.Production.**correlationMat**(*matrix*)
-: Caculation of correlation matrix of the input matrix
+  : Caculation of correlation matrix of the input matrix
+
 Parameters: | |
 ------|------
 **matrix**|*numpy.ndarray*
@@ -76,6 +77,7 @@ Parameters: | |
 ### CEE220A.TripGeneration.Production.coefficient
 CEE220A.TripGeneration.Production.**coefficient**(*y, z*)
 : Caculation of a set of coefficients of a linear regression model
+
 Parameters: | |
 ------|------
 **y**|*numpy.ndarray*
@@ -90,6 +92,7 @@ Parameters: | |
 ### CEE220A.TripGeneration.Production.stdError
 CEE220A.TripGeneration.Production.**stdError**(*beta, z, y, n, p*)
 : Caculation of the standard error of a model
+
 Parameters: | |
 ------|------
 **beta**|*numpy.ndarray*
@@ -110,6 +113,7 @@ Parameters: | |
 ### CEE220A.TripGeneration.Production.t_test
 CEE220A.TripGeneration.Production.**t_test**(*beta, s_beta*)
 : Caculation of the t statistics of each variable
+
 Parameters: | |
 ------|------
 **beta**|*numpy.ndarray*
@@ -124,6 +128,7 @@ Parameters: | |
 ### CEE220A.TripGeneration.Production.p_value
 CEE220A.TripGeneration.Production.**p_value**(*tStats, df*)
 : Caculation of the p values of the corresponding  t values in the degree of freedom df
+
 Parameters: | |
 ------|------
 **tStat**|*numpy.ndarray*
@@ -138,6 +143,7 @@ Parameters: | |
 ### CEE220A.TripGeneration.Production.rSquared
 CEE220A.TripGeneration.Production.**rSquared**(*beta, z, y*)
 : Caculation of the r-squared value of a model
+
 Parameters: | |
 ------|------
 **beta**|*numpy.ndarray*
@@ -154,6 +160,7 @@ Parameters: | |
 ### CEE220A.TripGeneration.Production.oi
 CEE220A.TripGeneration.Production.**oi**(*alt, model, time*)
 : Estimation of Oi for each zone for an alternative
+
 Parameters: | |
 ------|------
 **alt**|*string*
@@ -170,6 +177,7 @@ Parameters: | |
 ### CEE220A.TripGeneration.Attraction.dj
 CEE220A.TripGeneration.Attraction.**dj**(*alt, model, time*)
 : Estimation of Dj for each zone for an alternative
+
 Parameters: | |
 ------|------
 **alt**|*string*
@@ -186,6 +194,7 @@ Parameters: | |
 ### CEE220A.TripDistribution.GravityModel.adjDjF
 CEE220A.TripDistribution.GravityModel.**adjDjF**(*oi, dj*)
 : Matching operation of Dj's based on Oi's
+
 Parameters: | |
 ------|------
 **oi**|*numpy.ndarray*
@@ -200,6 +209,7 @@ Parameters: | |
 ### CEE220A.TripDistribution.GravityModel.calcBar
 CEE220A.TripDistribution.GravityModel.**calcBar**(*tij, cij*)
 : Calculation of average cost(initial value)
+
 Parameters: | |
 ------|------
 **tij**|*numpy.ndarray*
@@ -214,6 +224,7 @@ Parameters: | |
 ### CEE220A.TripDistribution.GravityModel.iterationAB
 CEE220A.TripDistribution.GravityModel.**iterationAB**(*tij, oi, dj, cij, mu, threshold*)
 : Iteration process to figure out Ai's and Bj's until satisfying threshold condition
+
 Parameters: | |
 ------|------
 **tij**|*numpy.ndarray*
@@ -238,6 +249,7 @@ Parameters: | |
 ### CEE220A.TripDistribution.GravityModel.tijHat
 CEE220A.TripDistribution.GravityModel.**tijHat**(*ai, bj, oi, dj, mu, cij*)
 : Estimation of Tij hat based on a series of estimated values(ai, bj, oi, dj)
+
 Parameters: | |
 ------|------
 **ai**|*numpy.ndarray*
